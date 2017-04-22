@@ -1,0 +1,15 @@
+<div class="cmp-1">
+    <h2 style="text-align: center">hell0,{{greeting}}</h2>
+
+    <!--[(ngModel)] 双向绑定-->
+    <label><input type="checkbox" [(ngModel)]="isShowMore">是否显示详细信息</label>
+    <p *ngIf="isShowMore" highlight>在语言方面，ECMAScript6的标准已经完成，这意味着浏览器将很快支持例如模块、类、lambda表达式、 generator等新的特性，而这些特性将显著地改变JavaScript的开发体验。
+
+        在开发模式方面，Web组件也将很快实现。然而现有的框架，包括Angular1.x对WEB组件的支持都不够好。</p>
+
+    <div>
+        <!--事件绑定 <input (keyup)="handle($event)"/>-->
+        <my-child [message]="msgToChild" (outer)="receive($event)"></my-child>
+        <p>从子组件获得的消息：{{ msgFromChild || '暂无' }}</p>
+    </div>
+</div>
