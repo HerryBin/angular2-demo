@@ -8,3 +8,7 @@
 
 5、打包文件好后，会生产 bundle.js，然后依次使用 npm install，npm start 启动服务器，   
   http://localhost:30000/ 访问。
+
+6、angularCLI 文件夹，需要使用 npm install -g @angular/cli 安装angular CLI 进行搭建。 
+   是否安装成功，可以使用 ng version 查看版本
+  
